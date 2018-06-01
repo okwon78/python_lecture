@@ -29,7 +29,8 @@ class Student:
 s1 = Student("John", 1)
 s2 = Student("Kwon", 2)
 
-Student.set_name_of_school("Stanford")
+# Student.set_name_of_school("Stanford")
+s1.set_name_of_school("UF")
 
 print(Student.name_of_school)
 print(s1.name_of_school)
