@@ -1,4 +1,5 @@
 from functools import wraps
+
 """
 Decorator using Function
 
@@ -43,18 +44,19 @@ class decorator_class(object):
         return self.original_func(*args, **kwargs)
 
 
-@decorator_func_2
-@decorator_func_1
-def hello_world_1():
-    print('hello_world_1')
+# @decorator_func_2
+# @decorator_func_1
+# def hello_world_1():
+#     print('hello_world_1')
 
 
+@decorator_class
 @decorator_class
 def hello_world_2():
     print('hello_world_2')
 
 
 if __name__ is '__main__':
-    hello_world_1()
+    # hello_world_1()
     print('\n')
     hello_world_2()

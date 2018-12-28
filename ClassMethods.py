@@ -12,7 +12,7 @@ class Student:
     @classmethod
     def set_name_of_school(cls, name_of_school):
         cls.name_of_school = name_of_school
-        print("class method")
+        print(f'set name_of_school (class method) {name_of_school}')
 
     @classmethod
     def from_string(cls, string):
@@ -26,15 +26,15 @@ class Student:
         return True
 
 
-s1 = Student("John", 1)
-s2 = Student("Kwon", 2)
+john = Student("John", 1)
+kwon = Student("Kwon", 2)
 
 # Student.set_name_of_school("Stanford")
-s1.set_name_of_school("UF")
+kwon.set_name_of_school("UF")
 
 print(Student.name_of_school)
-print(s1.name_of_school)
-print(s2.name_of_school)
+print('kwon: ', kwon.name_of_school)
+print('john: ', john.name_of_school)
 
 s3 = Student.from_string("Romi-1")
 
